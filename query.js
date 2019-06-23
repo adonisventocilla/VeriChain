@@ -12,10 +12,10 @@ const path = require('path');
 
 const ccpPath = path.resolve(__dirname, 'connection_profile.json');
 
-const user = 'admin';
-const channel = 'channel1';
-const contractName = 'simple-contract';
-const query = 'readSimpleContract';
+const user = 'user1';
+const channel = 'channel-maker';
+const contractName = 'Makers';
+const query = 'readMyAsset';
 
 async function main() {
     try {
@@ -53,7 +53,7 @@ async function main() {
         // Evaluate the specified transaction.
         // queryCar transaction - requires 1 argument, ex: ('queryCar', 'CAR4')
         // queryAllCars transaction - requires no arguments, ex: ('queryAllCars')
-        const result = await contract.evaluateTransaction(query, 'transaction11');
+        const result = await contract.evaluateTransaction(query, 'llave1');
         console.log(`Transaction has been evaluated, result is: ${result.toString()}`);
 
     } catch (error) {

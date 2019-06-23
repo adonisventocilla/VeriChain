@@ -13,9 +13,9 @@ const path = require('path');
 const ccpPath = path.resolve(__dirname, 'connection_profile.json');
 
 const user = 'admin';
-const channel = 'channel-';
-const contractName = 'simple-contract';
-const transactionName = 'createSimpleContract';
+const channel = 'channel-maker';
+const contractName = 'Makers';
+const transactionName = 'createMyAsset';
 
 async function main() {
     try {

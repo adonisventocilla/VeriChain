@@ -13,9 +13,9 @@ const path = require('path');
 
 const ccpPath = path.resolve(__dirname, 'connection_profile.json');
 
-const adminUser = 'admin'
+const adminUser = 'admin';
 const user = 'user1';
-const orgmsp = 'org2msp';
+const orgmsp = 'orgMTPEMmsp';
 
 async function main() {
     try {
